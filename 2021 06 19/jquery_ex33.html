@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+            // 애니메이션 명령은 큐에 쌓인다.
+            // 명령을 중첩시켜놓으면 쌓인게 계속 실행됨.
+            $("#down").click(function() {
+                $("#box").stop().slideDown(100);
+            })
+
+            $("#up").click(function() {
+                $("#box").stop().slideUp(100);
+            })
+
+            
+        })
+    </script>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>        
+    <button id="down">슬라이드다운</button>
+    <button id="up">슬라이드업</button>
+
+    <div id="box">box</div>
+
+</body>
+
+</html>

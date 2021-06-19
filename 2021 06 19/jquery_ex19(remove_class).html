@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+           // class값을 조작하는 메서드
+            $("#li1").removeClass("my_red");
+        })
+    </script>
+    <style>
+        .my_red {
+            background-color: red;
+        }
+
+        .my_green {
+            background-color: green;
+        }
+
+        .my_blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="li1" class="my_red">내용1</li>
+        <li id="li2" class="my_green">내용2</li>
+        <li id="li3" class="my_blue">내용3</li>
+    </ul>
+</body>
+
+</html>

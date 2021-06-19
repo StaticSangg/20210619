@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+           $(window).on("scroll", function() {
+               var sc_top = $(this).scrollTop();
+               var sc_left = $(this).scrollLeft();
+               $(".top").text(sc_top);
+               $(".left").text(sc_left);
+               
+           })
+        })
+    </script>    
+    <style>
+        body {
+            width: 5000px;
+            height: 10000px;
+        }
+
+        #wrap {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <p>scrollTop:<span class="top">0</span>px</p>
+        <p>scrollLeft:<span class="left">0</span>px</p>
+    </div>
+</body>
+
+</html>

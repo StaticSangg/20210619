@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+            $(".txt").prev()
+                .css("color", "red");
+
+            $(".txt").next()
+                .css("color", "blue");
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>인접관계선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+</body>
+
+</html>

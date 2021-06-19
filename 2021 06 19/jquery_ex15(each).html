@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+            var obj = [
+                {"area":"서울"},
+                {"area" :"부산"},
+                {"area" : "전주"},
+            ]           
+
+            // obj 배열에서 값이 하나씩 넘어온다.
+            // 위치값은 i로 들어가고, o에는 배열 데이터
+            $(obj).each(function(i, o){
+                console.log(i + ":" , o);
+            }) 
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

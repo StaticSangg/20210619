@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+           var w = $("#my_div").width();
+           var h = $("#my_div").height();
+           console.log("가로" , w)
+           console.log("세로", h);
+
+           $("#my_div").height(100);
+        })
+    </script>
+
+    <style>
+        #my_div{
+            width: 100px;
+            height: 50px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my_div">
+        구역 
+    </div>
+</body>
+
+</html>
